@@ -5,8 +5,7 @@ Create a cloudwatch rule and SNS topic for codepipeline failure notifications
 
 ```hcl
 module "myapp_codepipeline_sns" {
-  source  = "github.com/globeandmail/aws-codepipeline-sns"
-  version = "~> 1.0"
+  source = "github.com/globeandmail/aws-codepipeline-sns?ref=1.0"
 
   name             = "my-app"
   codepipeline_arn = "arn:aws:codepipeline:REGION:ACCT:name-of-pipeline"
